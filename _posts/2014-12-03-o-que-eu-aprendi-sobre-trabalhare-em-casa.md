@@ -1,6 +1,6 @@
 ---
 title:  O que eu aprendi sobre trabalhar em casa
-date:   2015-07-19 19:00:00
+date:   2014-12-03 19:00:00
 description: E como se manter produtivo nessa nova experiência
 ---
 
@@ -46,10 +46,3 @@ Disciplina é um problema pra quem começa a trabalhar em casa, ter por perto um
 Começo a trabalhar pontualmente às 10h00 da manhã, mas antes peço meu almoço e checo email e minhas redes sociais. O almoço chega por volta das 11h30 e eu almoço ao meio dia e meia assistindo algum filme na TV. Depois de meia hora de terminar o almoço volto a trabalhar e assim continuo até as 19h00, às vezes me estendo.
 
 Manter a rotina ajuda bastante a manter a produtividade, é importante também mesmo quando estar sem job manter atividades relacionadas ao trabalho, como lendo artigos relacionados ou estudando uma nova tecnologia.
-
-
-
-
-
-
-

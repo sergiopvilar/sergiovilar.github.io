@@ -1,6 +1,6 @@
 ---
 title:  Criando um media server com Plex e Raspberry Pi 2 like a boss
-date:   2015-07-19 19:00:00
+date:   2015-06-07 19:00:00
 description: Passo-a-passo de como transformar esse brinquedindo em algo super útil pra sua casa
 ---
 
