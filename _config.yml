@@ -9,8 +9,8 @@ highlighter: pygments
 
 paginate: 20
 baseurl: /
-domain_name: 'http://yourblog-domain.com'
-google_analytics: 'UA-XXXXXXXX-X'
+domain_name: 'http://vilar.cc'
+google_analytics: 'UA-65332388-1'
 disqus_shortname: 'sergiovilar'
 
 # Details for the RSS feed generator
