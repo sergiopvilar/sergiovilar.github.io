@@ -50,6 +50,12 @@
   {% endfor %}
 {% endif %}
 
+{% if page.keywords %}
+<meta name="keywords" content="{{ page.keywords }}" />
+{% else %}
+<meta name="keywords" content="development,blog,node,node.js,atom-shell,Electron,node-webkit,nw.js,php,laravel,javascript,npm,bower" />
+{% endif %}
+
 </head>
 <body>
 

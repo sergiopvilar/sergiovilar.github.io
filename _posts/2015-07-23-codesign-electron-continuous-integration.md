@@ -3,6 +3,7 @@ title:  Packaging and code signing Electron applications for OSX in Continuous I
 date:   2017-07-23 19:00:00
 description: A guide to setup a workflow to package and distribute Electron apps for OSX
 image: atom-shell.png
+keywords: "electron,atom-shell,codesign,code,signing,osx,continuous,integration,javascript,nodejs,node,package,packging,deploy"
 ---
 
 [Electron](https://github.com/atom/electron) is an awesome framework that lets you create cross-platform applications using web technologies (HTML, Javascript and CSS) and io.js. Is the same framework that Atom Editor was built.
