@@ -127,7 +127,7 @@ Remember to replace the content of `certificate_name` variable with your certifi
 
 To package and code sign the app just run:
 
-		node pkg.js --platform=darwin
+	node pkg.js --platform=darwin
 
 Ready to go!
 
@@ -135,9 +135,9 @@ Ready to go!
 
 [CircleCI](https://circleci.com) is a nice Continuous Integration service that has beta support to iOS builds, with a few ajdustments could be used to package our Electron application.
 
-To use iOS builds on CircleCI you need to enable this option, [see here](https://circleci.com/docs/ios) for instructions. You can also contact the CircleCI to get the iOS builds working.
+To use iOS builds on CircleCI you need to enable this option, [see here](https://circleci.com/docs/ios) for instructions. You can also contact the CircleCI support to get the iOS builds working.
 
-CircleCI needs a `.xcodeproj` file but you don't really to setup a Xcode Project, just [download here](http://d.pr/f/1jwxK) and extract to your `fixtures` folder.
+CircleCI needs a `.xcodeproj` file but you don't really have to setup a Xcode Project, just [download here](http://d.pr/f/1jwxK) and extract to your `fixtures` folder.
 
 Create a `circle.yml` in the root of your project root with this content:
 
@@ -159,6 +159,6 @@ test:
     - node pkg.js --platform=darwin
 ```
 
-Now your app is packaged and code signed on CircleCI and you can do whatever you want, like upload to a S3 bucket or something like that.
+Now your app is packaged and code signed on CircleCI. You can do whatever you want, like upload to a S3 bucket or something like that.
 
 If you have any questions, please let me know on the comments.
