@@ -2,6 +2,7 @@
 title:  O que eu aprendi sobre trabalhar em casa
 date:   2014-12-03 19:00:00
 description: E como se manter produtivo nessa nova experiência
+image: trabalhar-em-casa.jpeg
 ---
 
 ![Trabalhando em casa](/assets/images/posts/trabalhar-em-casa.jpeg)
