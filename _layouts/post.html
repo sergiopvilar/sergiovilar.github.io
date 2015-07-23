@@ -9,6 +9,9 @@ archive: true
         <h2 class="headline">{{ page.date | date:"%B %-d, %Y" }}</h2>
     </header>
     <section id="post-body">
+        {% if page.header_image %}
+        <p><img src="{{ site.url }}/assets/images/posts/{{page.header_image}}" alt=""></p>
+        {% endif %}
         {{content}}
     </section>
 </article>
