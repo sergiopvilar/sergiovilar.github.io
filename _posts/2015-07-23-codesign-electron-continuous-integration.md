@@ -22,14 +22,14 @@ Access the [Developer Dashboard](https://developer.apple.com/account/mac/certifi
 
 # Importing the certificates
 
-At this step you’re supposed do have downloaded your certificate. Create a folder called `fixtures` in your project and move your `.cer` file to this folder and rename it to `mac_development.cer`.
+At this step you’re supposed do have downloaded your certificate. Create a folder called `fixtures` in your project, move your `.cer` file to this folder and rename it to `mac_development.cer`.
 
-Now you need also to export your identity from Keychain as a `.p12` file. Same process, move to the `fixtures` folder and rename it to `Certificates.p12`.
+Now you also need to export your identity from Keychain as a `.p12` file. Same process, move to the `fixtures` folder and rename it to `Certificates.p12`.
 
 Crate a file at `./fixtures/certificate.sh` in your project with this content:
 
 ```bash
-!/bin/sh
+#!/bin/sh
 
 FOLDER=$(pwd)
 KEYCHAIN_PASSWORD=circleci
@@ -61,66 +61,66 @@ To package our application we will use the `electron-packager` npm module.
 Now create a file in your project root named pkg.js with this content:
 
 ```javascript
-	!/usr/bin/env node
+#!/usr/bin/env node
 
-	var os = require('os')
-	var pkgjson = require('./package.json')
-	var path = require('path')
-	var sh = require('shelljs')
+var os = require('os')
+var pkgjson = require('./package.json')
+var path = require('path')
+var sh = require('shelljs')
 
-	var certificate_name = 'Mac Developer: Foo Bar (BAZ123)'
-	var appVersion = pkgjson.version
-	var appName = pkgjson.name
-	var electronPackager = 'electron-packager'
-	var electronVersion = '0.29.2'
-	var icon = 'fixtures/icon.icns'
+var certificate_name = 'Mac Developer: Foo Bar (BAZ123)'
+var appVersion = pkgjson.version
+var appName = pkgjson.name
+var electronPackager = 'electron-packager'
+var electronVersion = '0.29.2'
+var icon = 'fixtures/icon.icns'
 
-	var archs = ['ia32', 'x64'];
+var archs = ['ia32', 'x64'];
 
-	if (typeof process.argv[2] !== 'undefined' && process.argv[2].indexOf('--platform') > -1) {
-	  archs.forEach(function (arch) {
-        var plat = process.argv[2];
-        pack(plat, arch);
-	  });
-	} else {
-	  // build for current platform only
-	  pack(os.platform(), os.arch())
-	}
+if (typeof process.argv[2] !== 'undefined' && process.argv[2].indexOf('--platform') > -1) {
+  archs.forEach(function (arch) {
+      var plat = process.argv[2];
+      pack(plat, arch);
+  });
+} else {
+  // build for current platform only
+  pack(os.platform(), os.arch())
+}
 
-	function pack (plat, arch) {
+function pack (plat, arch) {
 
-	  plat = plat.replace('--platform=', '');
-	  var outputPath = path.join('.', 'dist')
-	  sh.exec('./node_modules/.bin/rimraf ' + outputPath)
+  plat = plat.replace('--platform=', '');
+  var outputPath = path.join('.', 'dist')
+  sh.exec('./node_modules/.bin/rimraf ' + outputPath)
 
-	  // there is no darwin ia32 electron
-	  if (plat === 'darwin' && arch === 'ia32') return
+  // there is no darwin ia32 electron
+  if (plat === 'darwin' && arch === 'ia32') return
 
-	  var cmds = [];
+  var cmds = [];
 
-	  cmds.push(electronPackager + ' ./ ' + appName +
-		' --platform=' + plat +
-		' --arch=' + arch +
-		' --version=' + electronVersion +
-		' --app-version' + appVersion +
-		' --icon=' + icon +
-		' --out=' + outputPath +
-		' --ignore="dist|electron-packager"');
+  cmds.push(electronPackager + ' ./ ' + appName +
+	' --platform=' + plat +
+	' --arch=' + arch +
+	' --version=' + electronVersion +
+	' --app-version' + appVersion +
+	' --icon=' + icon +
+	' --out=' + outputPath +
+	' --ignore="dist|electron-packager"');
 
-	  if(plat === 'darwin'){
-		cmds.push('./fixtures/certificate.sh');
-		cmds.push('xcrun -log codesign --deep --force --sign "'+certificate_name+'" '+
-		  '--keychain=ios-build.keychain' +
-		  ' ./dist/'+appName+'.app '
-		);
-	  }
+  if(plat === 'darwin'){
+	cmds.push('./fixtures/certificate.sh');
+	cmds.push('xcrun -log codesign --deep --force --sign "'+certificate_name+'" '+
+	  '--keychain=ios-build.keychain' +
+	  ' ./dist/'+appName+'.app '
+	);
+  }
 
-	  for(var i in cmds){
-		console.log(cmds[i]);
-		sh.exec(cmds[i])
-	  }
+  for(var i in cmds){
+	console.log(cmds[i]);
+	sh.exec(cmds[i])
+  }
 
-	}
+}
 ```
 
 Remember to replace the content of `certificate_name` variable with your certificate name.
