@@ -30,8 +30,4 @@ window.App.controller('SearchController', function($scope) {
     $scope.results = res;
   });
 
-  $scope.$watch('results', function() {
-    console.log($scope.results);
-  });
-
 });
