@@ -4,6 +4,8 @@ date:   2014-12-03 19:00:00
 description: E como se manter produtivo nessa nova experiência
 image: trabalhar-em-casa.jpeg
 header_image: trabalhar-em-casa.jpeg
+keywords: escritório,trabalho,remoto,coworking,relato
+category: misc
 ---
 
 Depois de anos me locomovendo diariamente aos escritórios das empresas nas quais trabalhei, tendo uma equipe presencial pra trocar uma idéia e tomar um café, tive que lidar com o choque de trabalhar sozinho de casa.

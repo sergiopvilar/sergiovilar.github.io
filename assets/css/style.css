@@ -649,3 +649,14 @@ code {
 	background-color: rgba(0,0,0,0.04);
   padding: 0.2em 0;
 }
+
+#search-page #post-list {
+	margin-top:30px!important;
+}
+
+#site_search {
+	width: 100%;
+  padding: 10px 5px;
+  font-size: 12px;
+  border: 1px solid #E6E6E6;
+}
