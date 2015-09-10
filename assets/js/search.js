@@ -8,6 +8,7 @@ window.App.controller('SearchController', function($scope) {
     this.field('id');
     this.field('title', { boost: 10 });
     this.field('keywords');
+    this.field('description');
     this.field('category');
   });
 
