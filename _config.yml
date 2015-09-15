@@ -6,6 +6,17 @@ aboutPage: true
 
 markdown: redcarpet
 highlighter: pygments
+gems:
+  - jekyll-archives
+
+jekyll-archives:
+  layout: 'archive'
+  enabled:
+    - categories
+    - tags
+  permalinks:
+    tag: '/tag/:name/'
+    category: '/category/:name/'
 
 paginate: 20
 baseurl: /
