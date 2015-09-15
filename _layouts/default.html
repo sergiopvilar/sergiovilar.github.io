@@ -11,6 +11,13 @@
   <link rel="alternate" type="application/rss+xml" title="My Blog" href="/rss.xml">
   <link rel="stylesheet" href="/vendor/css/obsidian.css">
 
+  <script src="/vendor/js/jquery.min.js"></script>
+  <script src="/vendor/js/angular.min.js"></script>
+  <script src="/assets/js/highlight.js"></script>
+  <script src="/vendor/js/lunr.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+
   <meta content="{{ site.name }}" property="og:site_name">
 {% if page.title %}
   <meta content="{{ page.title }}" property="og:title">
@@ -70,13 +77,6 @@
   <section id="wrapper" class="{% if page.profile %}home{% endif %}">
     {{ content }}
   </section>
-
-  <script src="/vendor/js/jquery.min.js"></script>
-  <script src="/vendor/js/angular.min.js"></script>
-  <script src="/assets/js/highlight.js"></script>
-  <script src="/vendor/js/lunr.min.js"></script>
-  <script src="/assets/js/main.js"></script>
-  <script src="/assets/js/search.js"></script>
 
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
