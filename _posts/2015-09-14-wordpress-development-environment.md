@@ -53,7 +53,7 @@ With the `docker-compose.yml` file created we are ready to go! Just run:
 
 Wait it finishes and open `http://localhost:8080`.
 
-If you're in OSX, will need to access the VM directly. To get the machine IP, run:
+If you're in OSX, will need to access the VM directly. Get the machine IP running:
 
 	docker-machine ip default
 
