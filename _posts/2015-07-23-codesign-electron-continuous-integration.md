@@ -165,3 +165,5 @@ test:
 Now your app is packaged and code signed on CircleCI. You can do whatever you want, like upload to a S3 bucket or something like that.
 
 If you have any questions, please let me know on the comments.
+
+See all [Electron series](http://vilar.cc/category/electron).

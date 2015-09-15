@@ -20,3 +20,23 @@ task :deploy do
     puts "## Deploy Complete!"
   end
 end
+
+name = ENV["name"] || ""
+
+desc "Create a new post"
+task :create do
+
+  header = "---\n"
+  header += "title: \n"
+  header += "date:   "+Time.now.strftime("%Y-%m-%d")+" 19:00:00\n"
+  header += "description: \n"
+  header += "keywords: \n"
+  header += "category: \n"
+  header += "header_image: \n"
+  header += "---"
+
+  File.write('_posts/' + Time.now.strftime("%Y-%m-%d")+'-'+name+'.md', header)
+
+  puts 'Created: _posts/' + Time.now.strftime("%Y-%m-%d")+'-'+name+'.md';
+
+end
