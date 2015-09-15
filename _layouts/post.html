@@ -42,9 +42,11 @@ archive: true
     <ul id="post-list" class="archive readmore">
         <h3>Read more</h3>
         {% for post in site.posts %}
+          {% if post.url != page.url %}
             <li>
                 <a href="{{ post.url }}">{{ post.title }}<aside class="dates">{{ post.date | date:"%b %d" }}</aside></a>
             </li>
+          {% endif %}
         {% endfor %}
     </ul>
 {% endif %}
