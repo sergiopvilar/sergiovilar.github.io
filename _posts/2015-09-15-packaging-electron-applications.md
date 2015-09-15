@@ -41,5 +41,3 @@ if(plat === 'darwin'){
   cmds.push('codesign command');
 }
 ```
-
-See all [Electron series](http://vilar.cc/category/electron).

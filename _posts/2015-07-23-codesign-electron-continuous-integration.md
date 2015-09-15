@@ -57,72 +57,18 @@ security list-keychains -s ios-build.keychain
 Okay, our certificate import is ready, let’s setup the application packaging.
 
 # Packaging the application
-To package our application we will use the `electron-packager` npm module.
 
-	npm install —-save-dev electron-packager
+See [in this post](http://vilar.cc/2015/packaging-electron-applications/) how to setup the application packaging.
 
-Now create a file in your project root named pkg.js with this content:
+Then add this piece of code to the `pkg.js` script:
 
 ```javascript
-#!/usr/bin/env node
-
-var os = require('os')
-var pkgjson = require('./package.json')
-var path = require('path')
-var sh = require('shelljs')
-
-var certificate_name = 'Mac Developer: Foo Bar (BAZ123)'
-var appVersion = pkgjson.version
-var appName = pkgjson.name
-var electronPackager = 'electron-packager'
-var electronVersion = '0.29.2'
-var icon = 'fixtures/icon.icns'
-
-var archs = ['ia32', 'x64'];
-
-if (typeof process.argv[2] !== 'undefined' && process.argv[2].indexOf('--platform') > -1) {
-  archs.forEach(function (arch) {
-      var plat = process.argv[2];
-      pack(plat, arch);
-  });
-} else {
-  // build for current platform only
-  pack(os.platform(), os.arch())
-}
-
-function pack (plat, arch) {
-
-  plat = plat.replace('--platform=', '');
-  var outputPath = path.join('.', 'dist')
-  sh.exec('./node_modules/.bin/rimraf ' + outputPath)
-
-  // there is no darwin ia32 electron
-  if (plat === 'darwin' && arch === 'ia32') return
-
-  var cmds = [];
-
-  cmds.push(electronPackager + ' ./ ' + appName +
-	' --platform=' + plat +
-	' --arch=' + arch +
-	' --version=' + electronVersion +
-	' --app-version' + appVersion +
-	' --icon=' + icon +
-	' --out=' + outputPath +
-	' --ignore="dist|electron-packager"');
-
-  if(plat === 'darwin'){
-	cmds.push('./fixtures/certificate.sh');
-	cmds.push('xcrun -log codesign --deep --force --sign "'+certificate_name+'" '+
-	  '--keychain=ios-build.keychain' +
-	  ' ./dist/'+appName+'.app '
-	);
-  }
-
-  for(var i in cmds){
-	console.log(cmds[i]);
-	sh.exec(cmds[i])
-  }
-
+if(plat === 'darwin'){
+cmds.push('./fixtures/certificate.sh');
+cmds.push('xcrun -log codesign --deep --force --sign "'+certificate_name+'" '+
+  '--keychain=ios-build.keychain' +
+  ' ./dist/'+appName+'.app '
+);
 }
 ```
 
@@ -165,5 +111,3 @@ test:
 Now your app is packaged and code signed on CircleCI. You can do whatever you want, like upload to a S3 bucket or something like that.
 
 If you have any questions, please let me know on the comments.
-
-See all [Electron series](http://vilar.cc/category/electron).
