@@ -57,7 +57,7 @@ If you're in OSX, will need to access the VM directly. Get the machine IP runnin
 
 	docker-machine ip default
 
-Open `http://<machine-ip:8080` and you will see the WordPress setup.
+Open `http://<machine-ip>:8080` and you will see the WordPress installation page.
 
 Proceed with WordPress installation, login and activate your theme.
 
