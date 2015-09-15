@@ -43,7 +43,7 @@ database:
     MYSQL_ROOT_PASSWORD: somepassword
 ```
 
-This file says to Docker run two containers: *wordpress* using the `wordpress` image and *database* using the `mariadb` image.
+This file tells to Docker run two containers: *wordpress* using the `wordpress` image and *database* using the `mariadb` image.
 
 If are you developing a plugin, just need to change the path of the `volumes` option.
 
