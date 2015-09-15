@@ -47,7 +47,7 @@ This file tells to Docker run two containers: *wordpress* using the `wordpress` 
 
 If are you developing a plugin, just need to change the path of the `volumes` option.
 
-With the `docker-compose.yml` file create we are ready to go! Just run:
+With the `docker-compose.yml` file created we are ready to go! Just run:
 
 	docker-compose up
 
