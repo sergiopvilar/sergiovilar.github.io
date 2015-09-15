@@ -1,5 +1,5 @@
 ---
-title:  Packaging and code signing Electron applications for OSX in Continuous Integration
+title:  Code signing Electron applications for OSX in Continuous Integration
 date:   2015-07-23 19:00:00
 description: A guide to setup a workflow to package and distribute Electron apps for OSX
 image: atom-shell.png
