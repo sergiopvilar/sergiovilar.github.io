@@ -64,11 +64,11 @@ Then add this piece of code to the `pkg.js` script:
 
 ```javascript
 if(plat === 'darwin'){
-cmds.push('./fixtures/certificate.sh');
-cmds.push('xcrun -log codesign --deep --force --sign "'+certificate_name+'" '+
-  '--keychain=ios-build.keychain' +
-  ' ./dist/'+appName+'.app '
-);
+	cmds.push('./fixtures/certificate.sh');
+	cmds.push('xcrun -log codesign --deep --force --sign "'+certificate_name+'" '+
+	  '--keychain=ios-build.keychain' +
+	  ' ./dist/'+appName+'.app '
+	);
 }
 ```
 
