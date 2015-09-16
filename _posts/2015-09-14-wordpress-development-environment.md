@@ -5,6 +5,7 @@ description: How to get a WordPress installation in seconds
 keywords: php,wordpress,development,environment,docker,vm,virtualization
 category: php,wordpress,docker,setup
 header_image: docker.png
+image: docker_logo.png
 ---
 
 WordPress is an awesome CMS but setup a WordPress development environment could be a bit painful.
