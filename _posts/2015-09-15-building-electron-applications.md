@@ -1,5 +1,5 @@
 ---
-title: Packaging an Electron application for OSX, Windows and Linux
+title: Building an Electron application for OSX, Windows and Linux
 date:   2015-09-15 19:00:00
 description: Simple script that allows customization for specific platform/architeture
 keywords: electron,javascript,nodejs
