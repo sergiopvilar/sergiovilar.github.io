@@ -53,4 +53,4 @@ pod install
 
 Ready to go!
 
-This guide is based on [this](http://bouk.co/blog/sideload-iphone/) guide with the proper changes to work in iOS 9.
+This guide is based on [this post](http://bouk.co/blog/sideload-iphone/) with the proper changes to work in iOS 9.
