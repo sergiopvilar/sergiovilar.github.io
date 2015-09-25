@@ -22,7 +22,7 @@ First of all you need to install [Docker Toolbox](https://www.docker.com/toolbox
 
 Create a new docker machine and load his env variables:
 
-	docker-machine create --driver virtualbox dev
+	docker-machine create --driver virtualbox default
 	eval "$(docker-machine env default)"
 
 Create a file named `docker-compose.yml` in your theme’s root:
