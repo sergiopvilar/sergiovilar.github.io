@@ -1,5 +1,5 @@
 ---
-title: Slides: Desenvolvimento minimalista com Sinatra
+title: Slides - Desenvolvimento minimalista com Sinatra
 date:   2015-10-01 19:00:00
 description: Palestra apresentada no primeiro meetup Jampa Ruby, dia 19 de Setembro
 keywords: ruby,sinatra,programming
