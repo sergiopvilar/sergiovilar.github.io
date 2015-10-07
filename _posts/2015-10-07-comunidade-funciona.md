@@ -6,6 +6,7 @@ keywords: php,comunidade,funciona,phpeste
 category: php
 show_desc: true
 header_image: phpeste.jpg
+image: phpeste.jpg
 ---
 
 Organizar evento é foda. Quando comecei o [paraiba.js](http://paraiba.js) junto com [Arthur](http://arthurgouveia.com) não imaginava o quão forte seria aquilo que estávamos prestes a fazer. Os meetups não tinham patrocinadores, conseguíamos os locais na brodagem e o coffee-break saía sempre do nosso bolso.
