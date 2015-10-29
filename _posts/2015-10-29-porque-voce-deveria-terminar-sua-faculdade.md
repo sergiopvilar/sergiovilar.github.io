@@ -6,7 +6,7 @@ keywords: opiniao,mercado
 category: opiniao
 ---
 
-Steve Jobs não terminou sua faculdade, Bill Gates e Mark Zuckemberg também não. Ao invés de estarem perdendo tempo na sala de aula, estavam investindo seu tempo em algo muito mais valioso: mudar o mundo.
+Steve Jobs não terminou sua faculdade, Bill Gates e Mark Zuckerberg também não. Ao invés de estarem perdendo tempo na sala de aula, estavam investindo seu tempo em algo muito mais valioso: mudar o mundo.
 
 Você usa isso como justificativa, mas no fundo sabe que na real não tem nada de parecido com esses caras.
 
