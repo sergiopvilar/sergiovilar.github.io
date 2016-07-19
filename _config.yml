@@ -8,6 +8,7 @@ markdown: redcarpet
 highlighter: pygments
 gems:
   - jekyll-archives
+  - jekyll-paginate
 
 jekyll-archives:
   layout: 'archive'
