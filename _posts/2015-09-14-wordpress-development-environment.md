@@ -2,9 +2,9 @@
 title:  Wordpress Development Environment with Docker
 date:   2015-09-14 19:00:00
 description: How to get a WordPress installation in seconds
-keywords: php,wordpress,development,environment,docker,vm,virtualization
-category: php,wordpress,docker,setup
-header_image: docker.png
+tags: [php, wordpress, development, environment, docker]
+category: [php, wordpress, docker, setup]
+banner_image: docker.png
 image: docker_logo.png
 ---
 
@@ -12,7 +12,7 @@ WordPress is an awesome CMS but setup a WordPress development environment could 
 
 First of all you need a *LAMP* stack or something similar. Then you need to download a copy of WordPress, copy your theme (or plugin) and finally install WordPress.
 
-Well, fortunately we are in 2015 and someone has invented something to make our life easier:
+Well, fortunately we are in 2015 and someone has invented something to make our life easier<!--more-->:
 
 [Docker](http://docker.io) is a platform that allows the creation of containers to setup development and production environments. So we can turn all that painfull process into a piece of cake.
 

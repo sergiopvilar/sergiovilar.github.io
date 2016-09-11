@@ -1,14 +1,11 @@
 ---
-title: About
-permalink: about/
-profile: true
+layout: page
+title: About the things I write
+description: An optional about page for BlogInn Jekyll theme
 ---
 
-<div align="center">
-<p>Web Developer focused in Javascript and PHP,
-creator of <a href="http://alterfw.github.io">Alter</a>. <br />
-Currently working at <a href="http://hackhands.com">HackHands</a>.</p>
+**vilar.cc** is all about who I want to become. Here I write about things I do in my free time, stuff I’m learning at
+the work and things I want to learn. This blog is about the path to becoming a better developer and here I hope share
+with you all I learned in this meantime.
 
-<p>You can <a href="mailto:vilar@me.com">contact me</a> or reach me at <a href="https://github.com/sergiovilar">Github</a>, <a href="https://speakerdeck.com/sergiovilar">Speakerdeck</a>, <a href="https://twitter.com/Feelsen">Twitter</a> and <a href="https://www.linkedin.com/in/sergiovilar">Linkedin</a>.</p></div>
-
-{% include footer.html %}
+*Thank You for reading!*

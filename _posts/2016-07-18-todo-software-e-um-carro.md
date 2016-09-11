@@ -2,13 +2,17 @@
 title: "Todo Software é um carro: uma reflexão sobre débito técnico"
 date:   2016-07-18 19:00:00
 description: Todo o débito técnico de um projeto de software é fruto das decisões tomadas durante sua vida útil, um projeto de software enveleche da mesma forma que um carro.
-keywords: débito,técnico,software
+tags: [débito técnico, software]
 category: opiniao
+layout: post
+banner_image: fusca.jpg
 ---
 
 Alguns meses depois de comprar o meu primeiro carro, um Fusca 79, não pude deixar de notar a semelhança entre a manutenção de um carro e a manutenção de um projeto de software.
 
 O meu fusca possui um enorme débito técnico: as portas só fecham se forem batidas com muita força, vaza muito óleo, o banco do motorista não é regulável, o pisca traseiro direito não acende, entre outros.
+
+<!--more-->
 
 Semana passada meu pai comprou um Corcel l Luxo 76, um carro encantador. Assim como todo carro antigo, há uma série de pequenas manutenções a se fazer e meu pai todo animado as listava já dizendo onde iria comprar tal peça e como se consertava isso e aquilo. Achei engraçado e disse pra ele que com o tempo ele iria se acostumar, ia aceitar o carro como era e não iria consertar metade da lista dele.
 

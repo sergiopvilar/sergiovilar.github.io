@@ -1,92 +1,46 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="App">
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="google-site-verification" content="tzWMiVdmxsHHZe4cFd5p8d2T52xhMnqGfwLZp193J6U" />
-
-  <title>{{ site.name }}{% if page.title %} - {{page.title}}{% if page.show_desc %}: {{page.description}}{% endif %}{% endif %}</title>
-  <link rel="shortcut icon" href="/assets/images/favicon.ico">
-  <link rel="stylesheet" href="/assets/css/style.css">
-  <link rel="alternate" type="application/rss+xml" title="My Blog" href="/rss.xml">
-  <link rel="stylesheet" href="/vendor/css/obsidian.css">
-
-  <script src="/vendor/js/jquery.min.js"></script>
-  <script src="/vendor/js/angular.min.js"></script>
-  <script src="/assets/js/highlight.js"></script>
-  <script src="/vendor/js/lunr.min.js"></script>
-  <script src="/assets/js/main.js"></script>
-  <script src="/assets/js/search.js"></script>
-
-  <meta content="{{ site.name }}" property="og:site_name">
-{% if page.title %}
-  <meta content="{{page.title}}{% if page.show_desc %}: {{page.description}}{% endif %}" property="og:title">
-{% else %}
-  <meta content="{{ site.name }}" property="og:title">
-{% endif %}
-{% if page.title %}
-  <meta content="article" property="og:type">
-{% else %}
-  <meta content="website" property="og:type">
-{% endif %}
-{% if page.description %}
-  <meta content="{{ page.description }}" property="og:description">
-  <meta name="description" content="{{ page.description }}" />
-{% else %}
-  <meta content="{{ site.description }}" property="og:description">
-  <meta name="description" content="{{ site.description }}" />
-{% endif %}
-{% if page.url %}
-  <meta content="{{ site.url }}{{ page.url }}" property="og:url">
-{% endif %}
-{% if page.date %}
-  <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
-  <meta content="{{ site.url }}/about/" property="article:author">
-{% endif %}
-{% if page.image %}
-  <meta content="{{ site.url }}/assets/images/posts/{{ page.image }}" property="og:image">
-{% else %}
-  <meta content="{{ site.url }}/assets/images/avatar@2x.png" property="og:image">
-{% endif %}
-{% if page.categories %}
-  {% for category in page.categories limit:1 %}
-  <meta content="{{ category }}" property="article:section">
-  {% endfor %}
-{% endif %}
-{% if page.tags %}
-  {% for tag in page.tags %}
-  <meta content="{{ tag }}" property="article:tag">
-  {% endfor %}
-{% endif %}
-
-{% if page.keywords %}
-<meta name="keywords" content="{{ page.keywords }}" />
-{% else %}
-<meta name="keywords" content="development,blog,node,node.js,atom-shell,Electron,node-webkit,nw.js,php,laravel,javascript,npm,bower" />
-{% endif %}
-
+    <meta charset="utf-8">    
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title> 
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="shortcut icon" href="{{ "/favicon.ico" | prepend: site.baseurl }}">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css" />
+    <link rel="canonical" href="{{ page.url | replace:'/index.html','/' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }} Feed" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
 </head>
 <body>
-
-  {% include navigation.html %}
-
-  {% if page.profile %}
-      {% include profile.html %}
-  {% endif %}
-
-  <section id="wrapper" class="{% if page.profile %}home{% endif %}">
-    {{ content }}
-  </section>
-
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', '{{ site.google_analytics }}', 'auto');
-    ga('send', 'pageview');
-  </script>
+    <nav id="top" class="site-navigation">
+        <div class="inner">
+            <button id="menu-toggle" aria-expanded="false">Menu</button>
+            <div class="nav-menu">
+                <ul class="menu">
+                {% for link in site.navigation %}
+                  {% assign current = nil %}
+                  {% if page.url == link.url %}
+                    {% assign current = 'nav-current' %}
+                  {% endif %}
+                  <li class="{{ current }}">
+                    <a class="{{ current }}" href="{{ link.url }}">{{ link.text }}</a>
+                  </li>
+                {% endfor %}
+                </ul>        
+            </div><!-- .nav-menu -->
+            <a class="subscribe-button fa-feed square fill-horizontal" href="{{site.baseurl}}/feed.xml"><span class="screen-reader-text">Subscribe</span></a>
+        </div><!-- .inner -->
+    </nav><!-- .site-navigation -->
+    <header class="site-header">
+        <div class="inner">
+            <h1 class="site-title"><a class="logo-text" href="{{ site.baseurl }}/">{{{site.title}}</a></h1>
+            <p class="site-description">{{site.tagline}}</p>
+        </div><!-- .inner -->
+    </header>
+    {{content}}
+    {% include footer.html %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/js/plugins.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/js/custom.js"></script>
 </body>
 </html>

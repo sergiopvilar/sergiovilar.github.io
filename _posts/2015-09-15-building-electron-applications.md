@@ -2,11 +2,13 @@
 title: Building an Electron application for OSX, Windows and Linux
 date:   2015-09-15 19:00:00
 description: Simple script that allows customization for specific platform/architeture
-keywords: electron,javascript,nodejs
+tags: [electron, javascript, nodejs]
 category: electron
 ---
 
 To package your Electron application we’ll use a nodejs script that could be customized for codesign and/or CI purposes.
+
+<!--more-->
 
 First we need to install the dependencies:
 

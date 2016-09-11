@@ -2,13 +2,16 @@
 title: Porque você deveria terminar sua faculdade
 date:   2015-10-29 19:00:00
 description: Ou porque a lorota do “estou perdendo tempo” não faz o menor sentido
-keywords: opiniao,mercado
+tags: [opiniao, mercado]
 category: opiniao
+layout: post
 ---
 
 Steve Jobs não terminou sua faculdade, Bill Gates e Mark Zuckerberg também não. Ao invés de estarem perdendo tempo na sala de aula, estavam investindo seu tempo em algo muito mais valioso: mudar o mundo.
 
 Você usa isso como justificativa, mas no fundo sabe que na real não tem nada de parecido com esses caras.
+
+<!--more-->
 
 Estrutura de dados é besteira, qualquer um consegue implementar esses algoritmos, certo? E java? Ah, você tem asco de java. E também não gosta de um ou outro professor. E tudo isso se junta num único coro de “estou perdendo tempo aqui”.
 
