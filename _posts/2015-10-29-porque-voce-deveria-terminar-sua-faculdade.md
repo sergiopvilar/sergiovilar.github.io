@@ -49,7 +49,7 @@ O problema de não cursar uma faculdade é sim, ser especialista em diversos ass
 
 Programadores que têm conhecimento raso nas bases e conceitos de desenvolvimento de software tendem a se tornarem reféns de frameworks e ferramentas. Por medo, preguiça ou conforto. Aprender *tudo de novo* é impensável, se tornam avessos a mudanças mesmo quando pra melhor.
 
-![Buguinho Developer](http://d.pr/i/11gZI.jpg)
+![Buguinho Developer](/images/posts/buguinho.png)
 
 ### Onde o rio desagua?
 
