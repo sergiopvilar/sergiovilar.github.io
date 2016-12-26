@@ -3,28 +3,32 @@
 
   {% include head.html %}
 
-  <body>
+  <body class="page_{{page.slug}}">
 
     {% include sidebar.html %}
 
     <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
          content to avoid any CSS collisions with our real content. -->
     <div class="wrap">
-      <div class="masthead">
-        <div class="container">
-          <h3 class="masthead-title">
-            <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
-            <small>{{ site.tagline }}</small>
-          </h3>
+      {% if page.slug != 404 %}
+        <div class="masthead">
+          <div class="container">
+            <h3 class="masthead-title">
+              <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
+              <small>{{ site.tagline }}</small>
+            </h3>
+          </div>
         </div>
-      </div>
+      {% endif %}
 
       <div class="container content">
         {{ content }}
       </div>
     </div>
 
-    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+    {% if page.slug != 404 %}
+      <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+    {% endif %}
 
     <script>
       (function(document) {

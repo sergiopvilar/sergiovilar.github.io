@@ -1,0 +1,11 @@
+body.page_404 {
+  background: #D4DDED;
+}
+
+body.page_404 .content {
+  padding-top: 5em;
+}
+
+body.page_404 .content a{
+  color: #C4209A;
+}
