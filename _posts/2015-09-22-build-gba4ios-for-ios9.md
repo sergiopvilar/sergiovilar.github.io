@@ -2,8 +2,7 @@
 title: Build yourself a copy of GBA4iOS
 date:   2015-09-22 19:00:00
 description: Guide that shows how to build and run GBA4iOS in your phone
-tags: [ios, gba, gbc, xcode]
-category: guide
+layout: post
 ---
 
 GBA4iOS is an awesome GBA and GBC emulator for iOS and for obvious reasons can’t be on AppStore. The current version only supports iOS 8.3. If are you using iOS 9 and want to give a try, follow this guide.
@@ -16,7 +15,7 @@ The new version of Xcode allows that you can test an app in your device without 
 
 2 - Open Xcode 7, open preferences and login to your Apple Account.
 
-![Account](/assets/images/posts/gba4ios_account.png)
+![Account](/public/posts/gba4ios_account.png)
 
 3 - Download the source of the updated version of GBA4iOS:
 
@@ -45,11 +44,11 @@ pod install
 
 6 - Open the workspace in Xcode, plug in your iPhone and select it as the build destination.
 
-![Destination](/assets/images/posts/gba4ios_play.png)
+![Destination](/public/posts/gba4ios_play.png)
 
 7 - We now need to generate a code signing signature for the app. Click on the project on the left, fill in a unique “Bundle Identifier” and click on “Fix Issue” (make sure your name is selected as “team”)
 
-![Codesign](/assets/images/posts/gba4ios_codesign.png)
+![Codesign](/public/posts/gba4ios_codesign.png)
 
 8 - Click the play button in the top left. If there’s no build errors the app should now launch on your phone!
 

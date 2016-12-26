@@ -1,79 +1,30 @@
-# Welcome to Jekyll!
+# Permalinks
 #
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+# Setup
+title:               'vilar.cc'
+tagline:             'by Sergio Vilar'
+description:         'vilar.cc is a blog from Sergio Vilar talking about being a better software developer'
 
-# Site title
-title: "vilar.cc"
-
-# A description of your site for social meta tag, search engines, and feed.xml
-description: "vilar.cc is a blog from Sergio Vilar talking about being a better software developer"
-
-# Tagline near the site title
-tagline: "Being a better software developer"
-
-# The subpath of your site, e.g. /blog, for generating urls
 baseurl:
-
-sass:
-  sass_dir: _sass
-
-# The base hostname & protocol of your site for where absolute urls are needed
 url: "http://vilar.cc"
 
-# Site navigation - each item must have a title and a url.
-navigation:
-- text: Home
-  url: /
-- text: Talks
-  url: /talks/
-- text: Projects
-  url: /projects/
-- text: About
-  url: /about/
-- text: Archives
-  url: /tags/
-
-# The shortname for your Disqus site to enable comments.
-disqus: sergiovilar
-
-# Author information - author info at the bottom of the post
-author_name: "Sergio Vilar"
-author_bio: "Sergio is a software engineer from Brazil who loves to write open-source code and things about becoming a better software developer."
-author_url:  "http://github.com/sergiovilar"
-author_location: "Joao Pessoa, Brazil"
-author_image: /images/authorimage.jpg
-
-# Sidebar newsletter widget - add your form action url for MailChimp signup form here
-# mailchimp_url: "//justgoodthemes.us3.list-manage.com/subscribe/post?u=78f1bab16028354caeb23aecd&amp;id=4a7330d117"
-
-# Social links in the site footer
-twitter_username: "feelsen"
-# facebook_username: "username"
-# googleplus_username: "+username"
-github_username: "sergiovilar"
-# codepen_username: "username"
-# dribbble_uername: "username"
-# medium_username: "@username"
-instagram_username: "feelsen"
-# pinterest_username: "username"
-linkedin_username: "sergiovilar"
-
-# http://jekyllrb.com/docs/pagination/
 paginate: 5
 paginate_path: '/blog/page:num/'
 gems: [jekyll-paginate]
-
 permalink: /:year/:title/
-markdown: kramdown
-kramdown:
-    auto_ids: false
 
-defaults:
-  -
-    scope:
-      path: ""
-    values:
-      layout: "post"
+# About/contact
+author:
+  name:              Sérgio Vilar
+  bio:               "Sergio is a software engineer from Brazil who loves to write open-source code and things about becoming a better software developer."
+  location:          "Joao Pessoa, Brazil"
+  url:               https://twitter.com/feelsen
+  email:             vilar@Me.com
+
+# Custom vars
+version:             1.0.0
+disqus: sergiovilar
+
+collections:
+  pt:
+    output: true

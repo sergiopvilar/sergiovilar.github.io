@@ -1,10 +1,8 @@
 ---
 title: "React: Notas de desenvolvimento"
 date:   2016-09-25 15:00:00
-tags: [react,javascript,es6,jsx]
-category: javascript
 layout: post
-banner_image: react.png
+language: PT-BR
 ---
 
 Neste post vou dar algumas dicas e fazer algumas observações sobre a experiência de desenvolver com React.
@@ -17,7 +15,7 @@ Se você ainda não leu [meu primeiro post](http://vilar.cc/2016/comecando-com-r
 
 Diferentemente do Angular onde o *two way data-binding* funciona como mágica sempre que alguma propriedade do `$scope` é modificada, no React é preciso usar a função `setState()` pra isso. Vamos a um exemplo:
 
-{% highlight js %}
+{% highlight jsx %}
 {% raw %}
 class MyComponent extends React.Component {
   constructor(props) {
@@ -45,7 +43,7 @@ Como podemos observar, também é necessário setar um estado inicial populando 
 
 **Notinha:** Você não é obrigado a passar todos os atributos do state no `setState`, se eu tenho por exemplo este estado inicial:
 
-{% highlight js %}
+{% highlight jsx %}
 this.state = {
     a: 'Hello',
     b: 'Goodbye'
@@ -54,7 +52,7 @@ this.state = {
 
 Posso simplesmente chamar:
 
-{% highlight js %}
+{% highlight jsx %}
 this.setState({a: 'Hello hello'})
 {% endhighlight %}
 
@@ -62,7 +60,7 @@ this.setState({a: 'Hello hello'})
 
 Não é possível ter certeza de quando o `setState` terá de fato alterado os valores em `this.state`, vamos ver um exemplo sobre isso baseado no último pedaço de código:
 
-{% highlight js %}
+{% highlight jsx %}
 class MyComponent extends React.Component {
 
   constructor(props) {
