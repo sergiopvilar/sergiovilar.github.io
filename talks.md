@@ -2,6 +2,7 @@
 layout: page
 title: Talks
 description: Talks
+comments: true
 ---
 
 ### 1º Meetup Jampa Ruby (João Pessoa, PB)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-description: An optional about page for BlogInn Jekyll theme
+comments: false
 ---
 
 **vilar.cc** is all about who I want to become. Here I write about things I do in my free time, stuff I’m learning at

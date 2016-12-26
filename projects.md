@@ -2,6 +2,7 @@
 layout: page
 title: Open-source projects
 description: Talks
+comments: true
 ---
 
 I really love to write open-source because there's something about sharing what you're doing and let people improve
