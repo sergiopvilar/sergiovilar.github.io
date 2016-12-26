@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About the things I write
+title: About
 description: An optional about page for BlogInn Jekyll theme
 ---
 
@@ -9,3 +9,5 @@ the work and things I want to learn. This blog is about the path to becoming a b
 with you all I learned in this meantime.
 
 *Thank You for reading!*
+
+PS. If you want to know more about me, visit my [about.me page](https://about.me/vilar).

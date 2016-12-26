@@ -1,10 +1,8 @@
 ---
 title: "React: criando seu primeiro componente"
 date:   2016-09-16 21:00:00
-tags: [react,javascript,es6,jsx]
-category: javascript
 layout: post
-banner_image: react.png
+language: PT-BR
 ---
 
 O React dispensa apresentações logo não vou decorrer sobre os motivos de usar React. Neste post vou tentar sintetizar quais os primeiros passos pra usar o React no seu projeto e num post seguinte mostrar algumas notas de desenvolvimento que compilei na minha breve experiência com essa lib. 

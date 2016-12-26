@@ -1,8 +1,6 @@
 ---
 title: "macOS tip: Switch between SSIDs when connection drops"
 date:   2016-09-27 19:00:00
-tags: [macos,applescript,tip]
-category: macos
 layout: post
 ---
 

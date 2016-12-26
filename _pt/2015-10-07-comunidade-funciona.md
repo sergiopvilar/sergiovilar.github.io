@@ -2,11 +2,8 @@
 title: Comunidade funciona
 date:   2015-10-07 19:00:00
 description: O que temos a aprender com o PHPeste
-tags: [php, comunidade, phpeste]
-category: php
-show_desc: true
-banner_image: phpeste.jpg
-image: phpeste.jpg
+layout: post
+language: PT-BR
 ---
 
 Organizar evento é foda. Quando comecei o [paraiba.js](http://paraiba.js) junto com [Arthur](http://arthurgouveia.com) não imaginava o quão forte seria aquilo que estávamos prestes a fazer. Os meetups não tinham patrocinadores, conseguíamos os locais na brodagem e o coffee-break saía sempre do nosso bolso.

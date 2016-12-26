@@ -2,8 +2,8 @@
 title:  Criando um media server com Plex e Raspberry Pi 2 like a boss
 date:   2015-06-07 19:00:00
 description: Passo-a-passo de como transformar esse brinquedindo em algo super útil pra sua casa
-tags: [tutorial, raspberry pi, plex, mediaserver]
-category: tutorial,hacks
+layout: post
+language: PT-BR
 ---
 
 Olá, meus amigos. Fiz este guia pra quem quer economizar com NAS ou simplesmente não quer precisar ter o computador ligado pra assistir os filmes no Plex.
