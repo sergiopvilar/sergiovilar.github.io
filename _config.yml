@@ -28,3 +28,4 @@ disqus: sergiovilar
 collections:
   pt:
     output: true
+    permalink: /:year/:title/
