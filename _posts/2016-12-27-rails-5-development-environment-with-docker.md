@@ -8,7 +8,7 @@ I usually write about my experiments in pet projects and this post is a result o
 
 I'm a enthusiast about simplifying development environments and I had the need to implement this docker environment in a Rails 5 projects sooooo le'ts get started.
 
-### Building the Dockerfile
+## Building the Dockerfile
 
 I tried to build a Dockerfile for the Rails container using [Alpine Linux](https://alpinelinux.org/) but things got complicated and a gave up for now, I still want to build a Rails container on top of Alpine.
 
@@ -40,9 +40,9 @@ COPY . ./
 EXPOSE 3000
 ```
 
-### Building the docker-compose.yml
+## Building the docker-compose.yml
 
-As described in the comments we'll use a data container to cache our bundler dependencies, for this I'm using the 5mb docker image called `busybox`.
+As described in the comments we'll use a data container to cache our bundler dependencies, for this purpose I'm using the 5mb docker image called `busybox`.
 
 ```yaml
 #docker-compose.yml
@@ -83,17 +83,17 @@ services:
 
 Let's talk a little about this file.
 
-#### Yarn
+### Yarn
 
 I'm using the `netczuk` image because for now we don't have an official image and this one seems to be more simple to use and fill our needs in this development environment.
 
-#### PostgreSQL
+### PostgreSQL
 
 I'm disabling the logging in Postgres container but you can enable it by removing the `logging` key.
 
-#### Rails
+### Rails
 
-Our Rails container is called `web` and it's build based on the Dockerfile we saw above in this post. You can remove the `bundle install` from the command if you like and run whenever you whish:
+Our Rails container is called `web` and it's built based on the Dockerfile we saw above in this post. You can remove the `bundle install` from the command if you like and run whenever you whish:
 
         docker-compose run web bundle install
 
@@ -101,7 +101,7 @@ The `rm -f tmp/pids/server.pid` statement fixes a bug that happens when you stop
 
 Also those environment variables for Postgres are the default credentials for the database and you can change the `RAILS_ENV` for production if you like.
 
-### Updating database.yml
+## Updating database.yml
 
 Well, seeing that we're declaring some environment variables for the database credentials we need to change our database.yml to get those credentials.
 
