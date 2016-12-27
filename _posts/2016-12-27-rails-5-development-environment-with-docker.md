@@ -6,7 +6,7 @@ layout: post
 
 I usually write about my experiments in pet projects and this post is a result of a lot of experiments to finally get an acceptable result for a Rails 5 development environment with Docker.
 
-I'm a estusiast about simplifying development environments and I had the need to implement this docker environment in a Rails 5 projects sooooo le'ts get started.
+I'm a enthusiast about simplifying development environments and I had the need to implement this docker environment in a Rails 5 projects sooooo le'ts get started.
 
 ### Building the Dockerfile
 
