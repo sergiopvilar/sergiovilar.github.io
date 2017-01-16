@@ -20,7 +20,7 @@ browserify vai concatenar os arquivos" e percebi que a resposta era
 simples: em nenhuma.
 
 Sabe qual é o pior de tudo? Criar uma árvore de dependências faz
-**muito sentido**! Vou listar algumas delas.
+**muito sentido**! Vou listar algumas das vantagens.
 
 ### Escopo Isolado de dependências
 
