@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Open-source projects
+title: Projects
 description: Talks
 comments: true
 ---
@@ -9,7 +9,7 @@ I really love to write open-source because there's something about sharing what 
 based on they own needs.
 
 ### [Alter Framework](http://alterframework.com)
-A small framework that provides features to develop a real WordPress Application. 
+A small framework that provides features to develop a real WordPress Application.
 Alter introduces a completely new way to develop WordPress themes and plugins with models, routes and twig views.
 
 ### [Anansi Podcast Player](https://anansipodcast.github.io/)

@@ -4,9 +4,9 @@ title: About
 comments: false
 ---
 
-**vilar.cc** is all about who I want to become. Here I write about things I do in my free time, stuff I’m learning at
-the work and things I want to learn. This blog is about the path to becoming a better developer and here I hope share
-with you all I learned in this meantime.
+This website is all about who I want to become. Here I write about things I do in my free time, stuff I’m learning at
+the work and things I want to learn. This blog is about the path to become a better developer and here I hope share
+with you all I've learned in this meantime.
 
 *Thank You for reading!*
 

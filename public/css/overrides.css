@@ -1,0 +1,57 @@
+html, body {
+  font-family: "Menlo", "Meslo LG", monospace;
+}
+
+.posts article h4 small {
+  color: #999;
+}
+
+@media screen and (min-width: 1452px) {
+  .container {
+    max-width: 960px!important;
+    width: 960px!important;
+  }
+}
+
+@media screen and (min-width: 1260px) {
+  .container {
+    max-width: 960px!important;
+    width: 960px!important;
+  }
+}
+
+@media screen and (min-width: 1260px) {
+  .container {
+    max-width: 960px!important;
+    width: 960px!important;
+  }
+}
+
+.body-container {
+  padding:2rem 1.5rem
+}
+
+.highlighter-rouge {
+  margin-bottom: 20px;
+}
+
+.content a {
+  color: #1c7a96;
+}
+
+a, .content .posts a {
+  color: #363636;
+}
+
+.subtitle {
+  color: #666;
+}
+
+.content figure.highlight {
+  text-align: left;
+}
+
+.footer {
+  margin-top: 100px;
+  background-color: #fff;
+}

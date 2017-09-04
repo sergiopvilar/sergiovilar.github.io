@@ -2,10 +2,8 @@
 layout: default
 ---
 
-<div class="post">
-  <h1 class="post-title">{{ page.title }}</h1>
-  <span class="post-date">{{ page.date | date_to_string }}</span>
+<div class="post content">
+  <h2 class="title is-3">{{ page.title }}</h2>
+  <h5 class="subtitle is-5">{{ page.date | date_to_string }}</h5>
   {{ content }}
 </div>
-
-{% include comments.html %}

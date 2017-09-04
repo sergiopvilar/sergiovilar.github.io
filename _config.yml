@@ -1,8 +1,8 @@
 # Permalinks
 #
 # Setup
-title:               'vilar.cc'
-tagline:             'by Sergio Vilar'
+title:               'Sergio Vilar'
+tagline:             'writes about dev stuff'
 description:         'vilar.cc is a blog from Sergio Vilar talking about being a better software developer'
 
 baseurl:
