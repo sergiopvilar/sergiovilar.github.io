@@ -43,6 +43,10 @@ a, .content .posts a {
   color: #363636;
 }
 
+.posts small a {
+  color: #1c7a96!important;
+}
+
 .subtitle {
   color: #666;
 }
