@@ -56,7 +56,7 @@ Okay, our certificate import is ready, let’s setup the application packaging.
 
 # Packaging the application
 
-See [in this post](http://vilar.cc/2015/packaging-electron-applications/) how to setup the application packaging.
+See [in this post](http://svilar.me/2015/packaging-electron-applications/) how to setup the application packaging.
 
 Then add this piece of code to the `pkg.js` script:
 

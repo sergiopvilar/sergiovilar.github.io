@@ -3,10 +3,10 @@
 # Setup
 title:               'Sergio Vilar'
 tagline:             'writes about dev stuff'
-description:         'vilar.cc is a blog from Sergio Vilar talking about being a better software developer'
+description:         'This website is a blog from Sergio Vilar talking about being a better software developer'
 
 baseurl:
-url: "http://vilar.cc"
+url: "http://svilar.me"
 
 paginate: 5
 paginate_path: '/blog/page:num/'

@@ -7,7 +7,7 @@ language: PT-BR
 
 Neste post vou dar algumas dicas e fazer algumas observações sobre a experiência de desenvolver com React.
 
-Se você ainda não leu [meu primeiro post](http://vilar.cc/2016/comecando-com-react/) sobre o assunto, recomendo que dê uma lida antes de continuar neste post.
+Se você ainda não leu [meu primeiro post](http://svilar.me/2016/comecando-com-react/) sobre o assunto, recomendo que dê uma lida antes de continuar neste post.
 
 <!--more-->
 
