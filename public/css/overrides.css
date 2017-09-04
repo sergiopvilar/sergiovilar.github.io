@@ -59,3 +59,7 @@ a, .content .posts a {
   margin-top: 100px;
   background-color: #fff;
 }
+
+.navbar-burger.is-active span {
+  background-color: #666;
+}
