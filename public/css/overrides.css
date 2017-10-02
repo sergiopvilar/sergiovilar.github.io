@@ -64,11 +64,11 @@ a, .content .posts a {
   background-color: #666;
 }
 
-.content h4 {
+.post.content h4 {
   margin-top: 40px;
   margin-bottom:15px!important;
 }
 
-.content h2:not(:first-child) {
+.post.content h2:not(:first-child) {
   margin-top: 60px;
 }
