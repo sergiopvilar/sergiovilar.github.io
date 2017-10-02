@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Como é usar Dvorak como layout de teclado?
+image: http://opensourceforu.com/wp-content/uploads/2011/07/dvorak.jpg
 ---
 
 ![Teclado Dvorak](http://opensourceforu.com/wp-content/uploads/2011/07/dvorak.jpg)
