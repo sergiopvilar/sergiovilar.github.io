@@ -46,11 +46,11 @@ Além disso o pesadelo que tomou conta de mim nas primeiras semanas foram as tã
 
 Pra falar a verdade, até hoje eu ainda não consegui resolver esse problema definitivamente no Windows. Porém, no macOS eu descobri um layout de teclado nativo do sistema chamado Dvorak-QWERTY.
 
-O Dvorak-QWERTY é um teclado Dvorak mas ele emula um teclado QWERTY no momento que você pressiona a tecla *Command*, assim você pode manter todos os atalhos de teclado onde eles costumavam estar.
+O Dvorak-QWERTY é um teclado Dvorak que ele emula um teclado QWERTY no momento que você pressiona a tecla *Command*, assim você pode manter todos os atalhos de teclado onde eles costumavam estar.
 
 O Dvorak-QWERTY foi uma mão na roda, o único problema é que ele não suportava acentos. Eu decidi então procurar uma forma de fazer ele suportar os acentos, com o Karabiner criei meu próprio DVORAK-QWERTY International, que pode ser [baixado aqui](https://www.dropbox.com/s/jpfa9hkmmfbhqzh/Dvorak%20QWERTY%20dead%20keys.keylayout?dl=0).
 
-Tudo funcionou perfeitamente até então [com excessão do Atom](https://github.com/atom/atom-keymap/issues/225), nada que um [pequeno hack no init script](https://gist.github.com/sergiovilar/772f9bb39d0cc46b35e4eaacb389d736) não resolvesse.
+Tudo funcionou perfeitamente até então [com exceção do Atom](https://github.com/atom/atom-keymap/issues/225), nada que um [pequeno hack no init script](https://gist.github.com/sergiovilar/772f9bb39d0cc46b35e4eaacb389d736) não resolvesse.
 
 ## Resultados
 
