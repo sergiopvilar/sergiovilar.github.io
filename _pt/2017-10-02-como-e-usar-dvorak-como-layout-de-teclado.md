@@ -8,11 +8,13 @@ image: http://opensourceforu.com/wp-content/uploads/2011/07/dvorak.jpg
 
 ## Como eu aprendi Dvorak?
 
-Era 2014 e os primeiros sinais de tendinite começavam a aparecer e eu tinha me interessado recentemente por teclados mecânicos por influência de um colega do trabalho. Este mesmo colega também tinha me apresentado o Dvorak, meio sem compromisso, algo ao o qual ele tinha interesse de testar.
+Era 2014 e os primeiros sinais de tendinite começavam a aparecer. Eu tinha me interessado recentemente por teclados mecânicos por influência de um colega do trabalho e este mesmo colega também tinha me apresentado o Dvorak, meio sem compromisso, algo ao o qual ele tinha interesse de testar.
 
 Me perguntei porque não aprender um layout de teclado novo e parti pro abraço, entre as alternativas ao QWERTY o Dvorak me chamou mais a atenção acho que por todo apelo de ter a concentração digitada em apenas uma linha do teclado.
 
 Antes de efetivamente começar o processo de aprendizado eu tomei  duas decisões bastante radicais: eu não iria recorrer ao QWERTY se precisasse e se eu fosse passar a usar um novo teclado, eu teria que pelo menos digitar na mesma velocidade e com touch typing.
+
+Touch typing é basicamente quando você sabe a posição das teclas através de memória muscular, ou seja, você não precisa olhar para o teclado para saber onde cada tecla está.
 
 A primeira decisão foi importante para acelerar meu aprendizado, visto que praticamente tudo que se é necessário é aprendido muito mais rápido.
 
